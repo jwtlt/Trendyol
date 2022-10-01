@@ -23,6 +23,9 @@ public class Base_Page {
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement submitButton;
 
+    @FindBy(xpath = "//input[@data-testid='suggestion']")
+    public WebElement searchBox;
+
     public void login(){
         loginButton.click();
         wait.until(ExpectedConditions.visibilityOf(submitButton));
