@@ -1,4 +1,4 @@
-package trendyol.runner;
+package youtube.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -12,8 +12,8 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"
         },
         features = "src/test/resources/features",
-        glue = "trendyol/step_definition",
-        dryRun = false,
+        glue = "youtube/step_definition",
+        dryRun = true,
         tags = ""
 )
 

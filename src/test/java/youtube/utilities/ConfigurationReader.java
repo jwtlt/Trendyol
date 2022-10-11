@@ -1,4 +1,4 @@
-package trendyol.utilities;
+package youtube.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

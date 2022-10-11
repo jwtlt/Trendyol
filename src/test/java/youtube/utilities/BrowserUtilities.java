@@ -1,4 +1,4 @@
-package trendyol.utilities;
+package youtube.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;

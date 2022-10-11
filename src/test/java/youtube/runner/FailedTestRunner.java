@@ -1,4 +1,4 @@
-package trendyol.runner;
+package youtube.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;

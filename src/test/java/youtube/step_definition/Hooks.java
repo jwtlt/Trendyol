@@ -1,6 +1,6 @@
-package trendyol.step_definition;
+package youtube.step_definition;
 
-import trendyol.utilities.Driver;
+import youtube.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
