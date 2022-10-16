@@ -13,7 +13,7 @@ import static youtube.utilities.BrowserUtilities.*;
 
 public class WatchTheLastCityGame {
 
-    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 5);
+    WebDriverWait wait = new WebDriverWait(Driver.getDriver(), 10);
     Base_Page base_page = new Base_Page();
 
     @Given("User is on the main page")
@@ -39,7 +39,7 @@ public class WatchTheLastCityGame {
                 System.out.println("matchTitle = " + each.getText());
                 assertTrue(each.getText().toLowerCase().contains("city"));
                 count += 1;
-                if (count == 7) {
+                if (count == 1) {
                     return;
                 }
             }
@@ -52,7 +52,7 @@ public class WatchTheLastCityGame {
         for (WebElement each : matchesDates) {
             if (each.getText().length() > 5 && each.getText().contains("hours") || each.getText().contains("day") || each.getText().contains("days")) {
                 System.out.println("match date = " + each.getText());
-                wait.until(ExpectedConditions.visibilityOf(each));
+                wait.until(ExpectedConditions.elementToBeClickable(each));
                 each.click();
             }
         }
