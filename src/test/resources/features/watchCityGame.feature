@@ -1,4 +1,4 @@
-@E2E
+@match
 Feature: User Story : User should be able to watch last match of city
 
   Background:

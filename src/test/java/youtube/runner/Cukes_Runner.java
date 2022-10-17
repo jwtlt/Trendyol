@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "youtube/step_definition",
         dryRun = false,
-        tags = ""
+        tags = "@videoGame"
 )
 
 public class Cukes_Runner {
